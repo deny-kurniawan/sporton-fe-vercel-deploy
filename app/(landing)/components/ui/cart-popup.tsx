@@ -1,15 +1,31 @@
 import priceFormater from "@/app/utils/price-formatter";
 import Image from "next/image";
 import Button from "./button";
-import { FiArrowRight, FiTrash, FiTrash2 } from "react-icons/fi";
+import { FiArrowRight, FiTrash2 } from "react-icons/fi";
 
-const cartlist = [
+export const cartlist = [
      {
         name : "SportsOn HyperSoccer v2",
         category : "Football", 
         price : 458000,
         qty : 2,
         imgUrl : "product-4.png"
+    },
+
+     {
+        name : "SportsOn Slowlivin",
+        category : "Running", 
+        price : 119000,
+        qty : 1,
+        imgUrl : "product-5.png"
+    },
+
+     {
+        name : "SportsOn Slowlivin",
+        category : "Running", 
+        price : 119000,
+        qty : 1,
+        imgUrl : "product-5.png"
     },
 
      {
@@ -30,7 +46,7 @@ const CartPopup = () => {
             </div>
             {
                 cartlist.map((item, index) => (
-                    <div className="border-b border-gray-200 p-4 flex gap-3" key={index}>
+                    <div className="border-b border-gray-200 p-4 flex gap-3 " key={index}>
                         <div className="bg-primary-light aspect-square w-16 flex justify-center items-center">
                             <Image src={`/image/products/${item.imgUrl}`} width={63} height={63} alt={item.name} className="aspect-square object-contain"/>
                         </div>
