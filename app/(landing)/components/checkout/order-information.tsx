@@ -1,6 +1,9 @@
+import CardWithHeadar from "../ui/card-with-header";
+
 const OrderInformation = () => {
     return (
-        <div className="bg-white">
+        <CardWithHeadar title="Order Information">
+            <div className="bg-white">
             <div className="py-5 px-4 border-b border-gray-200">
                 <h2 className="font-bold text-lg">Order Information</h2>
                 <div className="p-5">
@@ -19,6 +22,7 @@ const OrderInformation = () => {
                 </div>
             </div>
         </div>
+        </CardWithHeadar>
     )
 }
 
